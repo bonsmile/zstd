@@ -6,3 +6,5 @@ add_library(zstd STATIC
 	zstd.h
 	zstd.c
 )
+
+target_compile_options(${PROJECT_NAME} PRIVATE "-Wno-unused-function")
