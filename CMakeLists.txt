@@ -7,4 +7,6 @@ add_library(zstd STATIC
 	zstd.c
 )
 
-target_compile_options(${PROJECT_NAME} PRIVATE "-Wno-unused-function")
+if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+	target_compile_options(${PROJECT_NAME} PRIVATE "-Wno-unused-function")
+endif()
