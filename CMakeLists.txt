@@ -7,10 +7,6 @@ add_library(zstd STATIC
 	zstd.c
 )
 
-if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
-	target_compile_options(${PROJECT_NAME} PRIVATE "/arch:AVX2")
-endif()
-
 if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
 	target_compile_options(${PROJECT_NAME} PRIVATE "-Wno-unused-function")
 endif()
