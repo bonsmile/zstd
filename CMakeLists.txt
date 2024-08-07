@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 3.25.0 )
+cmake_minimum_required( VERSION 3.19.0 )
 
 project(zstd LANGUAGES C VERSION 1.5.2)
 
