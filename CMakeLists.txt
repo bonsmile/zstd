@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.19.0 )
 
-project(zstd LANGUAGES C VERSION 1.5.2)
+project(zstd LANGUAGES C VERSION 1.5.7)
 
 set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
 set(THREADS_PREFER_PTHREAD_FLAG TRUE)
